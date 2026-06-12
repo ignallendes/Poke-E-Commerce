@@ -1,17 +1,13 @@
-import pokeLogo from './assets/img/logo.png'
-
 import './App.css'
+import Header from './components/header/header'
 
 function App() {
   return (
+
     <>
-      <header>
-        <nav>
-          <img src={pokeLogo} className="logo" alt="Poke logo" />
-          
-        </nav>
-      </header>
+      <Header />
     </>
+
   )
 }
 
