@@ -1,22 +1,31 @@
 import './App.css'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
-//import { pokedex } from '.src/mocks/pokedex.js'
 import ProductCard from './components/productCard/productCard'
+import { pokedex } from './assets/mocks/pokedex.js'
 
 
 function App() {
   return (
     <>
       <Header />
-      <ProductCard
-        num="001"
-        name="Bulbasaur"
-        img="https://www.serebii.net/pokemon/art/001.png"
-        type={["Grass", "Poison"]}
-        height="0.71 m"
-        weight="6.9 kg"
-      />
+      <div id="pokedexCoatainer">
+        {
+          pokedex[0].pokemons.map((pokemon) => (
+            <ProductCard
+              key={pokemon.id}
+              num={pokemon.num}
+              name={pokemon.name}
+              img={pokemon.img}
+              type={pokemon.type}
+              height={pokemon.height}
+              weight={pokemon.weight}
+            />
+          ))
+        }
+      </div>
+
+
 
       <Footer />
     </>
