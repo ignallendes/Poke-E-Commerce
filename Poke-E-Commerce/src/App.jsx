@@ -5,6 +5,7 @@ import ProductCard from './components/productCard/productCard'
 import { pokedex } from './assets/mocks/pokedex.js'
 
 
+
 function App() {
   return (
     <>
@@ -24,9 +25,6 @@ function App() {
           ))
         }
       </div>
-
-
-
       <Footer />
     </>
 

@@ -12,3 +12,10 @@ div {
     width: 200px;
     height: auto;
 }   
+header {
+    display: flex;
+    flex-direction: horizontal  ;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
