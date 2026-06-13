@@ -1,5 +1,5 @@
 import './productCard.css';
-
+import Button from '../button/button.jsx';
 function ProductCard(props) {
     return (
         <div className="product-card">
@@ -30,9 +30,8 @@ function ProductCard(props) {
                     <p>Peso: {props.weight}</p>
                 </div>
 
-
             </div>
-
+            <Button text="Agregar al carrito" />
         </div>
     );
 }
