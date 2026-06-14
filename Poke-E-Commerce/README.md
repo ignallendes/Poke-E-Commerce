@@ -1,16 +1,28 @@
-# React + Vite
+## Nombre del proyecto
+ Poke-E-Commerce 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Decripción del E-commerce
+Este E-commerce tiene un fin evolutivo, como los pokemón. Actualmente se muestran los primeros 151 pokemones correspondientes a la region de Kanto. La información que se muestra es número de pokedex, imagen de pokemon, tipo,altura y peso. Esta lista se encuentra almacenada en un archivo json local. En un futuro se espera que se conecta a una api llamada pokeApi
 
-Currently, two official plugins are available:
+## Componentes creados
+Se generan un total de 5 componentes:
+-button
+-footer
+-header
+-productCard
+searchBar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Intrucciones para correr el proyecto
+Para correr el proyecto de forma local se debe ejecutar el comando 'npm run dev'.
 
-## React Compiler
+## Tecnologías usadas
+npm
+vite
+react
+html
+css
+javascript
+## Capturas de pantalla 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Pantallaso 1](imagenes-readme/imagen1.png)
+![Pantallaso 2](imagenes-readme/imagen2.png)
