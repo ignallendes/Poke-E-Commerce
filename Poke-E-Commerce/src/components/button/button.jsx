@@ -2,7 +2,10 @@ import './button.css';
 
 function Button(props) {
     return (
-        <button className="boton">
+        <button className="boton"
+                onClick={props.onClick}
+        >
+            {props.icon}
             {props.text}
         </button>
     );

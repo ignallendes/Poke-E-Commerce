@@ -1,13 +1,20 @@
 import pokeLogo from '../../assets/img/logo.png'
 import './header.css'
+import SearchBar from '../searchBar/searchBar.jsx'
+import Button from '../button/button.jsx'
 
-function Header() {
+function Header(props) {
     return (
         <header>
             <div>
                 <img src={pokeLogo} className="logo" alt="Poke logo" />
-                <p className="title">Está página web tiene como propósito poder mostrar información sobre los Pokémon alojados en un archivo local y en un futuro servir como E-commerce.</p>
+                <p className="title">Pokedex de región de Kanto</p> 
             </div>
+            <SearchBar />
+            <Button
+                icon="🛒 "
+                text= {`Carrito ${props.cartCount}`}
+            />
         </header>
     );
 }
