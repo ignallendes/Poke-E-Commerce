@@ -3,13 +3,20 @@ import Header from './components/header/header'
 import Footer from './components/footer/footer'
 import ProductCard from './components/productCard/productCard'
 import { pokedex } from './assets/mocks/pokedex.js'
-
-
+import { useState } from 'react'
 
 function App() {
+
+  const [cart, setCart] = useState([]);
+
+  function agregarAlCarrito(pokemon) {
+    setCart(prevCart => [...prevCart, pokemon]);
+  }
+
   return (
     <>
-      <Header />
+      <Header cartCount={cart.length} />
+
       <div id="pokedexCoatainer">
         {
           pokedex[0].pokemons.map((pokemon) => (
@@ -21,14 +28,15 @@ function App() {
               type={pokemon.type}
               height={pokemon.height}
               weight={pokemon.weight}
+              onAddToCart={() => agregarAlCarrito(pokemon)}
             />
           ))
         }
       </div>
+
       <Footer />
     </>
-
-  )
+  );
 }
 
-export default App
+export default App;

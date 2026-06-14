@@ -31,7 +31,9 @@ function ProductCard(props) {
                 </div>
 
             </div>
-            <Button text="Agregar al carrito" />
+            <Button text="Agregar al carrito"
+                onClick={props.onAddToCart}
+            />
         </div>
     );
 }
