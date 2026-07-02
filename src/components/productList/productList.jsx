@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ProductCard from "../productCard/productCard";
+import ProductCard from "../productCard/ProductCard";
 import "./ProductList.css";
 import { useNavigate } from "react-router-dom";
 
