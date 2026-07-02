@@ -17,6 +17,12 @@ function Header(props) {
       <SearchBar />
 
       <Button
+        icon="🏠"
+        text="Pokemones"
+        onClick={() => navigate("/")}
+      />
+
+      <Button
         icon="📦"
         text="Productos"
         onClick={() => navigate("/products")}
