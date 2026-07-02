@@ -8,13 +8,14 @@ function Header(props) {
         <header>
             <div>
                 <img src={pokeLogo} className="logo" alt="Poke logo" />
-                <p className="title">Pokedex de región de Kanto</p> 
+                <p className="title">Pokedex de región de Kanto</p>
             </div>
             <SearchBar />
             <Button
                 icon="🛒 "
-                text= {`Carrito ${props.cartCount}`}
+                text={`Carrito ${props.cartCount}`}
             />
+
         </header>
     );
 }

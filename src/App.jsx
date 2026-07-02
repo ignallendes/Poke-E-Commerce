@@ -5,6 +5,7 @@ import ProductCardPoke from './components/productCardPoke/productCardPoke'
 import { pokedex } from './assets/mocks/pokedex.js'
 import { useState } from 'react'
 
+
 function App() {
 
   const [cart, setCart] = useState([]);
