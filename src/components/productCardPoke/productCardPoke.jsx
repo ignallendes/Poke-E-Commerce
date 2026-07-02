@@ -1,6 +1,6 @@
-import './productCard.css';
+import './productCardPoke.css';
 import Button from '../button/button.jsx';
-function ProductCard(props) {
+function productCardPoke(props) {
     return (
         <div className="product-card">
 
@@ -38,4 +38,4 @@ function ProductCard(props) {
     );
 }
 
-export default ProductCard;
+export default productCardPoke;

@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
-import ProductCard from './components/productCard/productCard'
+import ProductCardPoke from './components/productCardPoke/productCardPoke'
 import { pokedex } from './assets/mocks/pokedex.js'
 import { useState } from 'react'
 
@@ -20,7 +20,7 @@ function App() {
       <div id="pokedexCoatainer">
         {
           pokedex[0].pokemons.map((pokemon) => (
-            <ProductCard
+            <ProductCardPoke
               key={pokemon.id}
               num={pokemon.num}
               name={pokemon.name}
